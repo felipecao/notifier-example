@@ -4,6 +4,7 @@ import com.felipecao.example.ejb.entity.Notifier;
 import com.felipecao.example.ejb.service.NotifierService;
 import com.felipecao.example.web.dto.DTO;
 import com.felipecao.example.web.dto.DTOFactoryResolver;
+import com.felipecao.example.web.dto.DTOFactoryResolverImpl;
 import com.felipecao.example.web.dto.NotifierDTO;
 import com.felipecao.example.web.dto.factory.DTOFactory;
 import org.springframework.beans.factory.annotation.Autowired;
