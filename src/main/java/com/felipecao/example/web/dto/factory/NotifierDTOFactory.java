@@ -13,6 +13,6 @@ public class NotifierDTOFactory implements DTOFactory<Notifier, NotifierDTO> {
 
     @Override
     public Boolean appliesTo(Class<Notifier> entity) {
-        return Notifier.class.getSimpleName().equals(entity.getSimpleName());
+        return Notifier.class.equals(entity);
     }
 }
