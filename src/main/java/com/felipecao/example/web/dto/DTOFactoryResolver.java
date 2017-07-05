@@ -16,7 +16,11 @@ public class DTOFactoryResolver {
     }
 
     public <E extends ManagedEntity, D extends DTO> DTOFactory<E, D> getFactoryForClass(Class<E> clz) {
-        return factories.get(0);
+        return factories.
+                stream()
+                .filter(f -> f.appliesTo(clz))
+                .findFirst()
+                .orElseGet(() -> null);
     }
 
 }

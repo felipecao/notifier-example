@@ -10,4 +10,9 @@ public class NotifierDTOFactory implements DTOFactory<Notifier, NotifierDTO> {
     public NotifierDTO build(Notifier entity) {
         return new NotifierDTO(entity.getId(), entity.getName());
     }
+
+    @Override
+    public Boolean appliesTo(Class<Notifier> entity) {
+        return Notifier.class.getSimpleName().equals(entity.getSimpleName());
+    }
 }
