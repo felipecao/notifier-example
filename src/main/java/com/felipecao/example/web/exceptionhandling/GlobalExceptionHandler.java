@@ -1,6 +1,6 @@
-package com.igorhara.example.web.exceptionhandling;
+package com.felipecao.example.web.exceptionhandling;
 
-import com.igorhara.example.ejb.exception.EntityNotFoundException;
+import com.felipecao.example.ejb.exception.EntityNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
